@@ -6,8 +6,29 @@
 
 :root {
     --textColor: #4078c0;
-    --separatorColor: #fefefe;
+    --separatorColor: #d0d0d0;
     --backroundColor: #303039;
+
+    --separatorWidth: 98%;
+    --separatorThickness: 2px;
+}
+
+a:link {
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--textColor);
+}
+
+a:hover {
+    color: var(--textColor);
+    filter: brightness(90%);
+}
+
+a:active {
+    color: var(--textColor);
 }
 
 body {
@@ -18,24 +39,100 @@ body {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     background-color: var(--backroundColor);
     color: var(--textColor);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#MainContent {
-    height: 100%;
-    width: 66%;
+header {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
+
+    
+
+    display: flex;
+    align-items: center;
 }
 
-.Header {
-    margin: 1cm;
+#Logo {
+    filter: drop-shadow(0 0 1.2rem var(--textColor));
 }
 
-.Separator {
-    background-color: var(--separatorColor);
-    height: 2px;
-    width: 100%;
+.HeaderIcon {
+    width: 1cm;
+    height: 1cm;
+}
+
+.MainContent {
+    margin-left: 4%;
+    margin-right: 4%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3cm;
+}
+
+h1, h2, p {
+    margin: 0.5cm;
+}
+
+.Projects {
+    margin-left: 0.5cm;
+
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0.5cm;
+}
+
+.Project {
+    border: solid var(--separatorThickness) var(--separatorColor);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--backroundColor);
+    filter: brightness(150%);
+
+    min-width: 100px;
+    width: 250px;
+}
+
+.ProjectDiscription {
+    color: var(--separatorColor);
+    filter: brightness(60%);
+}
+
+hr {
+    margin-left: 1%;
+    margin-right: 1%;
+    color: var(--separatorColor);
+    width: var(--separatorWidth);
+}
+
+hr.solid {
+    border: none;
+    border-top: solid 2px;
+}
+
+hr.dashed {
+    border: none;
+    border-top: dashed 2px;
+}
+
+hr.dotted {
+    border: none;
+    border-top: dotted 2px;
+}
+
+hr.rounded {
+    border: none;
+    border-top: solid var(--separatorThickness);
+    border-radius: 10px;
 }
