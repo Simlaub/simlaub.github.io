@@ -1,0 +1,17 @@
+a:link {
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--textColor);
+}
+
+a:hover {
+    color: var(--textColor);
+    filter: brightness(90%);
+}
+
+a:active {
+    color: var(--textColor);
+}

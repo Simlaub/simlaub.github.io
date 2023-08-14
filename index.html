@@ -7,11 +7,19 @@
     <title>Simon Laubersheimer</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/link.css">
+    <link rel="stylesheet" href="css/separator.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/projectList.css">
 </head>
 <body>
-    <header>
-        <a href=""><h1 id="Logo">Simon Laubersheimer</h1></a>
-        <a href="https://www.github.com/Simlaub/"><img class="HeaderIcon" src = "assets/github-mark-white.svg" alt="GitHub"></a>
+    <header class="Header">
+        <a href=""><h1 class="Glow">Simon Laubersheimer</h1></a>
+
+        <div class="HeaderIconTray">
+            <a href="https://www.github.com/Simlaub/"><img class="HeaderIcon Glow" src = "assets/github-mark-white.svg" alt="GitHub"></a>
+        </div>
+
     </header>
 
     <hr class="rounded">
@@ -19,29 +27,29 @@
     <div class="MainContent">
         <h2>Projects</h2>
 
-        <div class="Projects">
+        <ul class="ProjectList">
 
-            <div class="Project">
-                <a href="FourierSeries"><p>Fourier Series</p></a>
+            <li class="ProjectListItem">
+                <a href="FourierSeries"><h3>Fourier Series</h3></a>
                 
                 <hr class="rounded">
 
-                <p class="ProjectDiscription">
+                <p class="ProjectDescription">
                     A visualisation of Fourier Series.
                 </p>
-            </div>
+            </li>
 
-            <div class="Project">
-                <a href="Tic-Tac-Toe-Bot"><p>Tic-Tac-Toe Bot</p></a>
+            <li class="ProjectListItem">
+                <a href="Tic-Tac-Toe-Bot"><h3>Tic-Tac-Toe Bot</h3></a>
             
                 <hr class="rounded">
             
-                <p class="ProjectDiscription">
+                <p class="ProjectDescription">
                     An unbeatable Tic-Tac-Toe Bot.
                 </p>
-            </div>
+            </li>
 
-        </div>
+        </ul>
         
     </div>
 </body>

@@ -1,0 +1,29 @@
+hr {
+    padding: 0;
+    margin-top: var(--padding);
+    margin-bottom: var(--padding);
+
+    color: var(--separatorColor);
+    width: 100%;
+}
+
+hr.solid {
+    border: none;
+    border-top: solid 2px;
+}
+
+hr.dashed {
+    border: none;
+    border-top: dashed 2px;
+}
+
+hr.dotted {
+    border: none;
+    border-top: dotted 2px;
+}
+
+hr.rounded {
+    border: none;
+    border-top: solid var(--separatorThickness);
+    border-radius: 10px;
+}

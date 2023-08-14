@@ -1,0 +1,21 @@
+.Header {
+    padding: var(--padding);
+
+    height: 2.0cm;
+
+    display: flex;
+    align-items: center;
+}
+
+.HeaderIconTray {
+    margin-left: auto;
+
+    display: flex;
+}
+
+.HeaderIcon {
+    width: 1cm;
+    height: 1cm;
+
+    margin: var(--padding);
+}
