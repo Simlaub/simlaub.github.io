@@ -1,0 +1,17 @@
+.Footer {
+    margin-top: auto;
+
+    background-color: var(--footerColor);
+    color: grey;
+
+    padding: var(--padding);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    --separatorColor: grey;
+
+    border-top: 2px solid var(--separatorColorDark);
+}

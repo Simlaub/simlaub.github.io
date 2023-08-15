@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: auto;
     gap: var(--padding);
+
+
 }
 
 .ProjectListItem {
@@ -12,8 +14,8 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: top;
+    align-items: left;
 
     background-color: var(--backroundColor);
     filter: brightness(150%);
@@ -24,4 +26,8 @@
 
 .ProjectDescription {
     color: var(--separatorColor);
+}
+
+.ProjectPreview {
+    
 }

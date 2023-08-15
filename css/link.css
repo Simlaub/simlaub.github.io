@@ -1,17 +1,17 @@
 a:link {
-    color: var(--textColor);
+    color: inherit;
     text-decoration: none;
 }
 
 a:visited {
-    color: var(--textColor);
+    color: inherit;
 }
 
 a:hover {
-    color: var(--textColor);
+    color: inherit;
     filter: brightness(90%);
 }
 
 a:active {
-    color: var(--textColor);
+    color: inherit;
 }

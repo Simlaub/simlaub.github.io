@@ -1,10 +1,21 @@
 .Header {
+    background-color: var(--headerColor);
+    color: var(--textColor);
+    
     padding: var(--padding);
+    padding-left: calc(2 * var(--padding));
 
-    height: 2.0cm;
+    height: auto;
 
     display: flex;
     align-items: center;
+
+    border-bottom: 2px solid var(--separatorColorDark);
+}
+
+.Logo {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
 }
 
 .HeaderIconTray {
@@ -17,5 +28,6 @@
     width: 1cm;
     height: 1cm;
 
-    margin: var(--padding);
+    margin-left: var(--padding);
+    margin-right: var(--padding);
 }

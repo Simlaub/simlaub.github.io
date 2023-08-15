@@ -10,15 +10,22 @@
 :root {
     --textColor: white;
     --separatorColor: white;
+    --separatorColorDark: #10101C;
     --backroundColor: #252830;
 
+    --headerColor: #14171F;
+    --footerColor: var(--headerColor);
+    --sidebarColor: var(--headerColor);
+
     --separatorThickness: 2.5px;
-    --padding: 0.4cm;
+    --padding: 1.0rem;
 }
 
 body {
+    background-color: var(--backroundColor);
+
     margin: 0;
-    padding: var(--padding);
+    padding: 0;
 
     position: absolute;
     width: 100%;
@@ -27,22 +34,48 @@ body {
     display: flex;
     flex-direction: column;
 
-    background-color: var(--backroundColor);
-    color: var(--textColor);
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
-.Glow {
+.glow {
     filter: drop-shadow(0 0 1.2rem var(--textColor));
 }
 
-.MainContent {
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.05);
+}
+
+.padded {
     padding: var(--padding);
+}
+
+.margined {
+    margin: var(--padding);
+}
+
+.FlexColumn {
+    color: var(--textColor);
+
+    gap: var(--padding);
     
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.FlexRow {
+    color: var(--textColor);
 
     gap: var(--padding);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
 }

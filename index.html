@@ -10,47 +10,67 @@
     <link rel="stylesheet" href="css/link.css">
     <link rel="stylesheet" href="css/separator.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/projectList.css">
 </head>
 <body>
     <header class="Header">
-        <a href=""><h1 class="Glow">Simon Laubersheimer</h1></a>
+        <a href="index.html"><h1 class="Logo glow">Simon Laubersheimer</h1></a>
 
         <div class="HeaderIconTray">
-            <a href="https://www.github.com/Simlaub/"><img class="HeaderIcon Glow" src = "assets/github-mark-white.svg" alt="GitHub"></a>
+            <a href="https://www.github.com/Simlaub/"><img class="HeaderIcon glow grow" src="assets/github-mark-white.svg" alt="GitHub"></a>
         </div>
 
     </header>
 
-    <hr class="rounded">
+    <div class="FlexColumn padded margined">
+        <h2>About</h2>
 
-    <div class="MainContent">
+        <p>
+            I am a computer science student from Germany. On this website you can find some of my projects.
+        </p>
+
+        <hr class="rounded">
+
         <h2>Projects</h2>
 
-        <ul class="ProjectList">
+        <div class="FlexRow">
 
-            <li class="ProjectListItem">
-                <a href="FourierSeries"><h3>Fourier Series</h3></a>
+            <ul class="ProjectList">
+
+                <li class="ProjectListItem grow">
+                    <a href="FourierSeries"><h3>Fourier Series</h3></a>
+                    
+                    <hr class="rounded">
+
+                    <p class="ProjectDescription">
+                        A visualisation of Fourier Series.
+                    </p>
+                </li>
+
+                <li class="ProjectListItem grow">
+                    <a href="Tic-Tac-Toe-Bot"><h3>Tic-Tac-Toe Bot</h3></a>
                 
-                <hr class="rounded">
+                    <hr class="rounded">
+                
+                    <p class="ProjectDescription">
+                        An unbeatable Tic-Tac-Toe Bot.
+                    </p>
+                </li>
+            </ul>
 
-                <p class="ProjectDescription">
-                    A visualisation of Fourier Series.
-                </p>
-            </li>
+            <div class="ProjectPreview">
+            </div>
 
-            <li class="ProjectListItem">
-                <a href="Tic-Tac-Toe-Bot"><h3>Tic-Tac-Toe Bot</h3></a>
-            
-                <hr class="rounded">
-            
-                <p class="ProjectDescription">
-                    An unbeatable Tic-Tac-Toe Bot.
-                </p>
-            </li>
+        </div>
 
-        </ul>
-        
     </div>
+
+    <footer class="Footer">
+        <a href="LICENSE.txt">© 2023 Simon Laubersheimer</a>
+        <hr class="rounded">
+        <a href="LICENSE.txt">License</a>
+        <a href="imprint.html">Imprint / Impressum</a>
+    </footer>
 </body>
 </html>
